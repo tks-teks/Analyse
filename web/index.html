@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Hologram Console</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top-bar">
+        <div>
+          <p class="eyebrow">Console intelligente</p>
+          <h1>Holo-SOC 3D</h1>
+        </div>
+        <div class="status">
+          <span class="pulse"></span>
+          <span>Surveillance active</span>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="hologram-card">
+          <canvas id="hologram"></canvas>
+          <div class="hologram-overlay">
+            <h2>Assistance holographique</h2>
+            <p>
+              Projection 3D temps réel des alertes critiques et synthèse vocale
+              contextualisée.
+            </p>
+            <div class="cta-row">
+              <button class="primary">Activer le mode immersion</button>
+              <button class="ghost">Synchroniser le SOC</button>
+            </div>
+          </div>
+          <div class="holo-controls">
+            <div>
+              <span>Holo-liaison</span>
+              <strong>92%</strong>
+            </div>
+            <div>
+              <span>Latence</span>
+              <strong>160 ms</strong>
+            </div>
+            <div>
+              <span>Scope</span>
+              <strong>Global</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>Décisions automatiques</h3>
+          <ul>
+            <li>
+              <strong>Blocage adaptatif</strong>
+              <span>Règle automatique déployée sur 4 pare-feux</span>
+            </li>
+            <li>
+              <strong>MFA intelligent</strong>
+              <span>Déclenché pour 12 comptes sensibles</span>
+            </li>
+            <li>
+              <strong>Chasse proactive</strong>
+              <span>Corrélation multi-sources en cours</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>Flux d'alertes</h3>
+          <div class="feed" id="feed"></div>
+          <div class="timeline" id="timeline"></div>
+        </section>
+
+        <section class="panel">
+          <h3>Assistante vocale</h3>
+          <p class="voice">"Alerte critique. Réponse recommandée en moins de 2 min."</p>
+          <div class="voice-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="metrics">
+            <div>
+              <span>Latence</span>
+              <strong>180 ms</strong>
+            </div>
+            <div>
+              <span>Confiance</span>
+              <strong>92%</strong>
+            </div>
+            <div>
+              <span>Prévention</span>
+              <strong>12 actions</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel full">
+          <h3>Carte d'anticipation</h3>
+          <div class="matrix">
+            <div>
+              <h4>Menaces prioritaires</h4>
+              <ul>
+                <li>Botnet régional &mdash; <strong>Risques élevés</strong></li>
+                <li>Exfiltration cloud &mdash; <strong>Surveillance continue</strong></li>
+                <li>Zero-day SaaS &mdash; <strong>Patch urgent</strong></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Actions immédiates</h4>
+              <ul>
+                <li>Rotation des tokens API</li>
+                <li>Quarantaine des endpoints sensibles</li>
+                <li>Audit des accès privilégiés</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Conscience situationnelle</h4>
+              <p>
+                Couverture globale à 360°. 38 capteurs actifs, 12 intégrations SIEM,
+                4 zones critiques sous surveillance renforcée.
+              </p>
+              <div class="radar" id="radar"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
