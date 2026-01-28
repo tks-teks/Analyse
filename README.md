@@ -46,6 +46,20 @@ Action recommandée : activer MFA et bloquer l'IP pendant 1h
 - `decision.py` : scoring et décisions de prévention.
 - `assistant.py` : assistance vocale (simulée).
 - `cli.py` : interface opérateur.
+- `web/` : console holographique 3D (frontend).
+
+## Interface holographique 3D
+
+Une console web immersive met en scène l'assistance vocale sous forme d'hologramme
+animé. Elle est conçue pour être branchée à des flux temps réel (alertes, décisions)
+et propose des panneaux de situation, des timelines et une visualisation radar.
+
+```bash
+cd web
+python -m http.server 8000
+```
+
+Puis ouvrir <http://localhost:8000> dans le navigateur.
 
 ## Notes
 
